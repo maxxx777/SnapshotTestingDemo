@@ -15,6 +15,8 @@
 		755D25E52030C95D00BA6D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 755D25E42030C95D00BA6D93 /* Assets.xcassets */; };
 		755D25E82030C95D00BA6D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755D25E62030C95D00BA6D93 /* LaunchScreen.storyboard */; };
 		755D25F32030C95E00BA6D93 /* SnapshotTestingDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D25F22030C95E00BA6D93 /* SnapshotTestingDemoTests.swift */; };
+		755D260C2030D09F00BA6D93 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 755D260A2030D09F00BA6D93 /* EmptyStateView.xib */; };
+		755D260D2030D09F00BA6D93 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D260B2030D09F00BA6D93 /* EmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		755D25EE2030C95D00BA6D93 /* SnapshotTestingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTestingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		755D25F22030C95E00BA6D93 /* SnapshotTestingDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestingDemoTests.swift; sourceTree = "<group>"; };
 		755D25F42030C95E00BA6D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755D260A2030D09F00BA6D93 /* EmptyStateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
+		755D260B2030D09F00BA6D93 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		9F635F2506870FE191537073 /* Pods_SnapshotTestingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotTestingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EFE58CBDE808D65E99AABF /* Pods-SnapshotTestingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTestingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTestingDemo/Pods-SnapshotTestingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E911F8A2A1547BE8C3EC6F37 /* Pods-SnapshotTestingDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTestingDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTestingDemoTests/Pods-SnapshotTestingDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		755D25DC2030C95D00BA6D93 /* SnapshotTestingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				755D26092030D09F00BA6D93 /* EmptyStateView */,
 				755D25DD2030C95D00BA6D93 /* AppDelegate.swift */,
 				755D25DF2030C95D00BA6D93 /* ViewController.swift */,
 				755D25E12030C95D00BA6D93 /* Main.storyboard */,
@@ -115,6 +120,15 @@
 				755D25F42030C95E00BA6D93 /* Info.plist */,
 			);
 			path = SnapshotTestingDemoTests;
+			sourceTree = "<group>";
+		};
+		755D26092030D09F00BA6D93 /* EmptyStateView */ = {
+			isa = PBXGroup;
+			children = (
+				755D260A2030D09F00BA6D93 /* EmptyStateView.xib */,
+				755D260B2030D09F00BA6D93 /* EmptyStateView.swift */,
+			);
+			path = EmptyStateView;
 			sourceTree = "<group>";
 		};
 		8B6D33F975423FFDEFB555A5 /* Pods */ = {
@@ -219,6 +233,7 @@
 			files = (
 				755D25E82030C95D00BA6D93 /* LaunchScreen.storyboard in Resources */,
 				755D25E52030C95D00BA6D93 /* Assets.xcassets in Resources */,
+				755D260C2030D09F00BA6D93 /* EmptyStateView.xib in Resources */,
 				755D25E32030C95D00BA6D93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755D260D2030D09F00BA6D93 /* EmptyStateView.swift in Sources */,
 				755D25E02030C95D00BA6D93 /* ViewController.swift in Sources */,
 				755D25DE2030C95D00BA6D93 /* AppDelegate.swift in Sources */,
 			);
