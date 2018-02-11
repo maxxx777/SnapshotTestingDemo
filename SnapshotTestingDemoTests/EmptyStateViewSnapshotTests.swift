@@ -22,4 +22,11 @@ class EmptyStateViewSnapshotTests: FBSnapshotTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    
+    func testEmptyStateViewConformsToOriginalState() {
+        let emptyView = EmptyStateView.instanceFromNib()
+        
+        FBSnapshotVerifyView(emptyView)
+        FBSnapshotVerifyLayer(emptyView.layer)
+    }
 }
