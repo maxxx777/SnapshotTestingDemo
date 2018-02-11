@@ -15,7 +15,7 @@ class EmptyStateViewSnapshotTests: FBSnapshotTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-//        self.recordMode = true
+        self.recordMode = true
         self.isDeviceAgnostic = true
     }
     
@@ -47,5 +47,19 @@ class EmptyStateViewSnapshotTests: FBSnapshotTestCase {
         
         FBSnapshotVerifyView(emptyView)
         FBSnapshotVerifyLayer(emptyView.layer)
+    }
+    
+    func testEmptyStateViewConformsToOriginalStateWith1PercentTolerancy() {
+        let emptyView = EmptyStateView.instanceFromNib()
+        
+        FBSnapshotVerifyView(emptyView, tolerance: 0.01)
+        FBSnapshotVerifyLayer(emptyView.layer, tolerance: 0.01)
+    }
+    
+    func testEmptyStateViewConformsToOriginalStateWith50PercentTolerancy() {
+        let emptyView = EmptyStateView.instanceFromNib()
+        
+        FBSnapshotVerifyView(emptyView, tolerance: 0.5)
+        FBSnapshotVerifyLayer(emptyView.layer, tolerance: 0.5)
     }
 }
