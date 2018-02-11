@@ -15,7 +15,8 @@ class EmptyStateViewSnapshotTests: FBSnapshotTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-//        self.recordMode = true
+        self.recordMode = true
+        self.isDeviceAgnostic = true
     }
     
     override func tearDown() {
