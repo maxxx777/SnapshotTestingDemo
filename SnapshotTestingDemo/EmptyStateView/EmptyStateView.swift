@@ -24,7 +24,7 @@ class EmptyStateView: UIView {
         view.labelText?.textColor = brandColor        
         
         view.buttonDoSomething?.layer.cornerRadius = 15
-        view.buttonDoSomething?.layer.borderColor = brandColor.cgColor
+        view.buttonDoSomething?.layer.borderColor = UIColor.red.cgColor
         view.buttonDoSomething?.layer.borderWidth = 2.0
         
         return view
