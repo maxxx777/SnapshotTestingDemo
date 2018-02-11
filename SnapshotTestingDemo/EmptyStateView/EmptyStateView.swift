@@ -22,7 +22,6 @@ class EmptyStateView: UIView {
         let view = UINib(nibName: "EmptyStateView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! EmptyStateView
         
         view.labelText?.textColor = brandColor        
-        view.labelText?.numberOfLines = 2
         
         view.buttonDoSomething?.layer.cornerRadius = 15
         view.buttonDoSomething?.layer.borderColor = brandColor.cgColor
